@@ -182,7 +182,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Reduce cost of scrypt for FBE CE decryption
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.scrypt_params=13:3:1
-
-# setup dm-verity configs.
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/1da4000.ufshc/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
